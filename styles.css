@@ -1,0 +1,72 @@
+.body {
+    background-color: #000;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Neon Red Accents */
+.ui-element {
+    border: 2px solid #ff1a1a;
+    box-shadow: 0 0 10px #ff1a1a;
+    border-radius: 5px;
+}
+
+/* CRT Scanline Effect */
+.crt {
+    background: repeating-linear-gradient(
+        transparent,
+        transparent 90%,
+        rgba(0, 0, 0, 0.1) 90%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    background-size: 100% 4px;
+}
+
+/* Grain Filter */
+.grain {
+    background: url('path/to/grain.png') repeat;
+    mix-blend-mode: multiply;
+}
+
+/* Mobile Responsive Layout */
+@media (max-width: 600px) {
+    .ui-element {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Virtual Joystick Styling */
+.virtual-joystick {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 26, 26, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* UI Overlay Elements */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
